@@ -1,0 +1,130 @@
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  text-align: center; /* Center the heading and image */
+  margin-bottom: 30px; /* Add spacing at the bottom of the image */
+}
+
+.portrait {
+  width: 400px; /* Make the image 400px wide to make it bigger */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some spacing between the image and the heading */
+}
+.portrait-container {
+  display: inline-block; /* Create a block around the image */
+  position: relative; /* Needed for pseudo-element positioning */
+  overflow: hidden; /* Hide overflowing pseudo-element */
+}
+
+.spotify-link {
+  position: relative; /* Set the position of the link to relative */
+}
+
+.spotify-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: red;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}
+#about {
+  font-size: 60px;
+  font-style: sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: 350px;
+  width: 550px;
+  object-fit: cover;
+}
+.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.album-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 40px;
+  margin-left: 50px;
+}
+
+.album {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.album-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.album-link:hover::before {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Adjust the background color for the hover effect */
+}
+.album-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: red;
+}
+footer {
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+}
+.copyright {
+  font-size: 10px;
+  text-align: center;
+}
